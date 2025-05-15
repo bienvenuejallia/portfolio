@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dimi Bienvenue Jallia – Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1e90ff;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 1.6em;
+      color: #1e90ff;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #1e90ff;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    ul.skills {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    ul.skills li {
+      background-color: #e0ecff;
+      padding: 10px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    .bloc-formation {
+      margin-bottom: 20px;
+    }
+
+    .bloc-formation h4 {
+      color: #1e90ff;
+      margin-bottom: 8px;
+      font-size: 1.1em;
+    }
+
+    .clean-list {
+      list-style: none;
+      padding-left: 15px;
+    }
+
+    .clean-list li::before {
+      content: "•";
+      color: #1e90ff;
+      margin-right: 8px;
+    }
+
+    .project {
+      background-color: #ffffff;
+      border-left: 4px solid #1e90ff;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      border-radius: 6px;
+    }
+    
+    .project a {
+      color: #1e90ff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .contact a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+
+    video {
+      max-width: 100%;
+      width: 600px;
+      height: 340px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  .container {
+    padding: 20px 15px;
+  }
+
+  ul.skills {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  ul.skills li {
+    text-align: center;
+    width: 100%;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  .project {
+    padding: 15px;
+  }
+
+  .project h3 {
+    font-size: 1.1em;
+  }
+
+  .contact p {
+    font-size: 0.95em;
+  }
+}
+
+
+
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>Dimi Bienvenue Jallia</h1>
+    <p>Étudiant en Informatique – Passionné par le développement web et l’apprentissage de nouvelles technologies</p>
+  </header>
+
+  <div class="container">
+
+    <section>
+      <h2>Présentation</h2>
+      <p>
+        Actuellement en formation à l’Université de Strasbourg, je développe des projets en HTML, CSS, JavaScript, Python et SQL.
+        J’ai également pratiqué le C et Haskell dans le cadre universitaire. Mon objectif est de progresser dans le développement
+        web fullstack et de contribuer à des projets concrets en entreprise.
+      </p>
+    </section>
+
+    <section>
+      <h2>Compétences techniques</h2>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>C</li>
+        <li>Haskell</li>
+        <li>Git & GitHub</li>
+        <li>Responsive Design</li>
+      </ul>
+    </section>
+
+    <section class="formation">
+      <h2>Formation</h2>
+      <p><strong>Université de Strasbourg</strong> – Licence 1 Informatique & Mathématiques</p>
+
+      <div class="bloc-formation">
+        <h4>Bloc Mathématiques</h4>
+        <ul class="clean-list">
+          <li>Algèbre S1 & S2</li>
+          <li>Analyse S1</li>
+          <li>Mathématiques élémentaires</li>
+        </ul>
+      </div>
+
+      <div class="bloc-formation">
+        <h4>Bloc Informatique</h4>
+        <ul class="clean-list">
+          <li>Algorithmique Programmation 1 & 2</li>
+          <li>Programmation Web</li>
+          <li>Bases de Données</li>
+          <li>Langage fonctionnel (Haskell)</li>
+          <li>Bases de l’Architecture Informatique</li>
+        </ul>
+      </div>
+
+      <div class="bloc-formation">
+        <h4>Autres Unités</h4>
+        <ul class="clean-list">
+          <li>Projet Professionnel</li>
+          <li>Langues : Anglais LANSAD (compréhension écrite, orale, Reading for Pleasure)</li>
+          <li>Sciences et Enjeux Environnementaux</li>
+          <li>Méthodologie : Kit de survie, démonstration, raisonnement logique</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Langues</h2>
+      <p>Français : langue maternelle</p>
+      <p>Anglais : niveau B2 – compréhension technique et écrite</p>
+    </section>
+    <p>
+      <a href="cv-bienvenue-jallia.pdf" download><button>télécharger mon CV en pdf</button></a>
+    </p>
+    <section>
+      <h2>Projet : Formulaire interactif</h2>
+      <p>Ce projet met en pratique HTML5, CSS et JavaScript pour créer un formulaire dynamique et responsive. Voici une démonstration :</p>
+      <video controls poster="formulaire.jpg">
+        <source src="video-formulaire-html-js.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+      </video>
+      <p><a href="video-formulaire-html-js.mp4" target="_blank">Télécharger la vidéo</a></p>
+    </section>
+
+    <section>
+      <h2>Autres projets</h2>
+
+      <div class="project">
+        <h3>Formulaire interactif</h3>
+        <p>Formulaire HTML/CSS validant les données utilisateur avec JavaScript.</p>
+        <a href="https://bienvenuejallia.github.io/formulaire2-todo/" target="_blank">Voir sur GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>page web responsive</h3>
+        <p>Une page web responsive présentant mon profil et mes projets.</p>
+        <a href="https://bienvenuejallia.github.io/page-css-grid/" target="_blank">Voir sur GitHub</a>
+      </div>
+      <div class="project">
+        <h3>CV web </h3>
+        <source src="cv2 video.mp4" type="video/mp4">
+      </video>
+      <p><a href="cv2 video.mp4" target="_blank">Télécharger la vidéo</a></p>
+
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Email : <a href="mailto:bienvenuejallia@gmail.com">bienvenuejallia@gmail.com</a></p>
+      <p>GitHub : <a href="https://github.com/bienvenuejallia" target="_blank">github.com/bienvenuejallia</a></p>
+      <p>LinkedIn : <a href="https://www.linkedin.com/in/bienvenue-jallia-dimi-b097922a5" target="_blank">linkedin.com/in/bienvenue-jallia-dimi</a></p>
+    </section>
+
+  </div>
+
+</body>
+</html>
